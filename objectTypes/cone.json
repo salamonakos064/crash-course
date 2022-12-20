@@ -1,0 +1,43 @@
+{
+	"name": "cone",
+	"plugin-id": "Sprite",
+	"sid": 489761550803446,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 140238767604555
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 50,
+						"originX": 2.5,
+						"originY": 2.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 1,
+						"imageSpriteId": 4814338,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 952174847884192,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

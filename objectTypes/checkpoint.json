@@ -1,0 +1,28 @@
+{
+	"name": "checkpoint",
+	"plugin-id": "TiledBg",
+	"sid": 698031067104251,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "active",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 433826449476771
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 50,
+		"height": 20,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2237422,
+		"useCollisionPoly": true
+	}
+}

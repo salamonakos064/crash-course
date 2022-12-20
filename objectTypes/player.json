@@ -1,0 +1,126 @@
+{
+	"name": "player",
+	"plugin-id": "Sprite",
+	"sid": 977852381170967,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Gear",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 770567092829647
+		},
+		{
+			"name": "LapCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 491667632694123
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Car",
+			"name": "Car",
+			"sid": 234693406659185
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 166140272111070
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6069046,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.995,
+								0,
+								0.995,
+								0.5,
+								0.995,
+								0.99,
+								0.5,
+								0.99,
+								0,
+								0.99,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 243452808645077,
+				"name": "Forward",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8894712,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.995,
+								0,
+								0.995,
+								0.5,
+								0.995,
+								0.99,
+								0.5,
+								0.99,
+								0,
+								0.99,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 597094929211864,
+				"name": "Reverse",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

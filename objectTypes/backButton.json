@@ -1,0 +1,20 @@
+{
+	"name": "backButton",
+	"plugin-id": "TiledBg",
+	"sid": 362074312203975,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 500,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8118150,
+		"useCollisionPoly": true
+	}
+}

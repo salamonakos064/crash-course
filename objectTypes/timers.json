@@ -1,0 +1,15 @@
+{
+	"name": "timers",
+	"plugin-id": "Text",
+	"sid": 141464379150659,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 876737517466564
+		}
+	],
+	"effectTypes": []
+}

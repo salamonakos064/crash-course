@@ -1,0 +1,1258 @@
+{
+	"name": "In-game-events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "start",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 398310905697438
+		},
+		{
+			"eventType": "variable",
+			"name": "penalty",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 341089417057149
+		},
+		{
+			"eventType": "variable",
+			"name": "currentlap",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 716867294419403
+		},
+		{
+			"eventType": "variable",
+			"name": "totalTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 802476454012907
+		},
+		{
+			"eventType": "variable",
+			"name": "end",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 167514466107177
+		},
+		{
+			"eventType": "variable",
+			"name": "Checkpoints",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 127245057040220
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 195025281866453,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 230980359817810,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 2,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 914033828561752,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "player",
+					"sid": 567909521380727,
+					"parameters": {
+						"instance-variable": "Gear",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gears",
+					"sid": 229887520947355,
+					"parameters": {
+						"text": "\"Gear:\" & player.Gear"
+					}
+				}
+			],
+			"sid": 660463722508978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 551258576829498,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 696680209318078,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 4,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 152968631396224,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "player",
+					"sid": 849295758027286,
+					"parameters": {
+						"instance-variable": "Gear",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gears",
+					"sid": 788385553904715,
+					"parameters": {
+						"text": "\"Gear:\" & player.Gear "
+					}
+				}
+			],
+			"sid": 109440994975326
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 151515892249606,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "player",
+					"sid": 358326130122898,
+					"behaviorType": "Car",
+					"parameters": {
+						"acceleration": "300"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 316295699720092,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "350"
+					}
+				}
+			],
+			"sid": 629639760562030
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 604753579216474,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "player",
+					"sid": 964771632252483,
+					"behaviorType": "Car",
+					"parameters": {
+						"acceleration": "200"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 315384343671617,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "500"
+					}
+				}
+			],
+			"sid": 371575673169921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 767728575334537,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "player",
+					"sid": 598483584662233,
+					"behaviorType": "Car",
+					"parameters": {
+						"acceleration": "150"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 570950463951005,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "650"
+					}
+				}
+			],
+			"sid": 324893756692339
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 377154935873749,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "player",
+					"sid": 710159255652476,
+					"behaviorType": "Car",
+					"parameters": {
+						"acceleration": "100"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 588496958075386,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "800"
+					}
+				}
+			],
+			"sid": 246101581921759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 919721934030311,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-acceleration",
+					"objectClass": "player",
+					"sid": 930702599571738,
+					"behaviorType": "Car",
+					"parameters": {
+						"acceleration": "50"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 602303064233323,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "950"
+					}
+				}
+			],
+			"sid": 130962230254406
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 124394049016829,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 2,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "player",
+					"sid": 987440183343525,
+					"parameters": {
+						"instance-variable": "Gear",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gears",
+					"sid": 467180165674229,
+					"parameters": {
+						"text": "\"Gear:\" & player.Gear"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 459091743926363,
+					"parameters": {
+						"animation": "\"Reverse\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 410376536199936
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 834939681466757,
+					"parameters": {
+						"object": "cone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "cone",
+					"sid": 505960461561987
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 830302237518403,
+					"parameters": {
+						"variable": "penalty",
+						"value": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 216525192316899,
+					"parameters": {
+						"audio-file": "Explosion1__003",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 813409731114733
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 920530920958828
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "speed",
+					"sid": 787858944396820,
+					"parameters": {
+						"text": "\"Speed:\" &  round(player.Car.Speed)  "
+					}
+				}
+			],
+			"sid": 788652386455390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 642127795272485,
+					"parameters": {
+						"object": "checkpoint"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "start",
+					"sid": 781731514452920,
+					"parameters": {
+						"instance-variable": "active",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "checkpoint",
+					"sid": 794883301456586,
+					"parameters": {
+						"instance-variable": "active",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "checkpoint",
+					"sid": 910463190093596,
+					"parameters": {
+						"instance-variable": "active",
+						"value": "0"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 908920065376826,
+					"parameters": {
+						"variable": "Checkpoints",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 446736951452927,
+					"parameters": {
+						"audio-file": "bell",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 743628118878548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 618692703635377,
+					"parameters": {
+						"object": "start"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "start",
+					"sid": 736882876709471,
+					"parameters": {
+						"instance-variable": "active",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 361778891161811,
+					"parameters": {
+						"variable": "Checkpoints",
+						"value": "checkpoint.Count"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "start",
+					"sid": 449339207731794,
+					"parameters": {
+						"instance-variable": "active",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "checkpoint",
+					"sid": 710197759513571,
+					"parameters": {
+						"instance-variable": "active",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 404901037964551,
+					"parameters": {
+						"variable": "currentlap",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 143524326789907,
+					"parameters": {
+						"variable": "start",
+						"value": "time"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "timers",
+					"sid": 772981574572743,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timers",
+					"sid": 175698494660526,
+					"parameters": {
+						"text": "\"lap \" & currentlap &\"/\" & player.LapCount+1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 636488268144615,
+					"parameters": {
+						"seconds": "3.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "timers",
+					"sid": 319144756456166,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 721253037173731
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 204297830602820,
+					"parameters": {
+						"object": "start"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "start",
+					"sid": 801873237105728,
+					"parameters": {
+						"instance-variable": "active",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 928446376353559,
+					"parameters": {
+						"variable": "Checkpoints",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 809256891985249,
+					"parameters": {
+						"variable": "currentlap",
+						"comparison": 4,
+						"value": "player.LapCount"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 592877637452821,
+					"parameters": {
+						"variable": "end",
+						"value": "time"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "audio",
+					"sid": 543173539762713
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 582941445883310,
+					"parameters": {
+						"audio-file": "Victory",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timers",
+					"sid": 602303164155642,
+					"parameters": {
+						"text": "\"Time: \"& round(end+penalty-start) & \" Seconds\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 526779065219195,
+					"parameters": {
+						"variable": "totalTime",
+						"value": "round(end+penalty-start)"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "timers",
+					"sid": 543854701234045,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 785586463701681,
+					"behaviorType": "Car",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 684273970970514,
+					"parameters": {
+						"seconds": "5.0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 884657071352205,
+					"parameters": {
+						"variable": "penalty",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 628679562138591,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 700835684482692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 514112329735109,
+					"parameters": {
+						"object": "start"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "start",
+					"sid": 331958145868074,
+					"parameters": {
+						"instance-variable": "active",
+						"comparison": 4,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 445804265863509,
+					"parameters": {
+						"variable": "Checkpoints",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 610413384896075,
+					"parameters": {
+						"variable": "currentlap",
+						"comparison": 3,
+						"value": "player.LapCount"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "checkpoint",
+					"sid": 805064401582953,
+					"parameters": {
+						"instance-variable": "active",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "timers",
+					"sid": 263951494619268,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 552873890134877,
+					"parameters": {
+						"variable": "Checkpoints",
+						"value": "checkpoint.Count"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 577616020463113,
+					"parameters": {
+						"variable": "currentlap",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timers",
+					"sid": 565686911801929,
+					"parameters": {
+						"text": "\"lap \" & currentlap & \"/\" & player.LapCount+1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 385996120383628,
+					"parameters": {
+						"seconds": "3.0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "timers",
+					"sid": 733599283898083,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 804112091113498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "player",
+					"sid": 839830015011218,
+					"parameters": {
+						"object": "road"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "player",
+					"sid": 958557433358014,
+					"behaviorType": "Car",
+					"parameters": {
+						"max-speed": "player.Car.MaxSpeed/2"
+					}
+				}
+			],
+			"sid": 739792202628533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 257126288731156
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 652198667556317,
+					"parameters": {
+						"audio-file": "Mercury",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 286547588908837
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 846912107447605,
+					"parameters": {
+						"key": 87
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 127454547312903,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "accelerate"
+					}
+				}
+			],
+			"sid": 535716143428209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 320063574018420,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 210591043684479,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "brake"
+					}
+				}
+			],
+			"sid": 459156620459411
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 687193157751853,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 209440038850837,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "steer-left"
+					}
+				}
+			],
+			"sid": 975025517079256
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 961685840441845,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 110267401288269,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "steer-right"
+					}
+				}
+			],
+			"sid": 217079627232889
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-button-index-down",
+					"objectClass": "Gamepad",
+					"sid": 740746938252674,
+					"parameters": {
+						"gamepad": "0",
+						"button-index": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 195207549577278,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "accelerate"
+					}
+				}
+			],
+			"sid": 200249458719117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-button-index-down",
+					"objectClass": "Gamepad",
+					"sid": 645406540662680,
+					"parameters": {
+						"gamepad": "0",
+						"button-index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 278994675431534,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "brake"
+					}
+				}
+			],
+			"sid": 184357146201711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 589826830134975,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-x-axis",
+						"comparison": 2,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 423384738484972,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "steer-left"
+					}
+				}
+			],
+			"sid": 206332259403270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 888468583960173,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-x-axis",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "player",
+					"sid": 389056492538062,
+					"behaviorType": "Car",
+					"parameters": {
+						"control": "steer-right"
+					}
+				}
+			],
+			"sid": 921604683492264
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-index-pressed",
+					"objectClass": "Gamepad",
+					"sid": 347654843762927,
+					"parameters": {
+						"gamepad": "0",
+						"button-index": "5"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 603261796809144,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 2,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 739832404226267,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "player",
+					"sid": 212431759559615,
+					"parameters": {
+						"instance-variable": "Gear",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gears",
+					"sid": 677961118741888,
+					"parameters": {
+						"text": "\"Gear:\" & player.Gear"
+					}
+				}
+			],
+			"sid": 718378087903324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-index-pressed",
+					"objectClass": "Gamepad",
+					"sid": 647231183061099,
+					"parameters": {
+						"gamepad": "0",
+						"button-index": "4"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "player",
+					"sid": 307968322324744,
+					"parameters": {
+						"instance-variable": "Gear",
+						"comparison": 4,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 355853751058939,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "player",
+					"sid": 789504341716402,
+					"parameters": {
+						"instance-variable": "Gear",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "gears",
+					"sid": 884223463981105,
+					"parameters": {
+						"text": "\"Gear:\" & player.Gear"
+					}
+				}
+			],
+			"sid": 725258453894235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "player",
+					"sid": 476268726944827,
+					"behaviorType": "Car",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "player",
+					"sid": 553157004023689,
+					"parameters": {
+						"animation": "\"Forward\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 368521472191239
+		}
+	],
+	"sid": 204755595846876
+}

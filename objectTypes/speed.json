@@ -1,0 +1,15 @@
+{
+	"name": "speed",
+	"plugin-id": "Text",
+	"sid": 317888508147675,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 371431694991100
+		}
+	],
+	"effectTypes": []
+}

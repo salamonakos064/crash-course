@@ -1,0 +1,79 @@
+{
+	"name": "sub-menu-events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 969532069931290
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 906918521532677,
+					"behaviorType": "Car",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timers",
+					"sid": 693163190601644,
+					"parameters": {
+						"text": "\"Total time: \" & totalTime & \" Seconds\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 859787575655745,
+					"parameters": {
+						"audio-file": "BossMain",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 607057001129167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 122382490789950,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "backButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "audio",
+					"sid": 389954798314312
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 570331505689285,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 233314183389173
+		}
+	],
+	"sid": 968774963428124
+}

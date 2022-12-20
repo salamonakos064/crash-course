@@ -1,0 +1,15 @@
+{
+	"name": "gears",
+	"plugin-id": "Text",
+	"sid": 798967287080926,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 282791776593339
+		}
+	],
+	"effectTypes": []
+}

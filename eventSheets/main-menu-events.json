@@ -1,0 +1,98 @@
+{
+	"name": "main-menu-events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 198272535365912,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "startButtton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "audio",
+					"sid": 172290441733514
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 367145287888256
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 382845377149317,
+					"parameters": {
+						"layout": "Level 1"
+					}
+				}
+			],
+			"sid": 848284513680818
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 721222223222801
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 309488541325347,
+					"parameters": {
+						"audio-file": "Map (basic version)",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 974932930340892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 534578352457284,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "backButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "audio",
+					"sid": 770070927688694
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 707675376911125,
+					"parameters": {
+						"layout": "Instructions"
+					}
+				}
+			],
+			"sid": 963540208950456
+		}
+	],
+	"sid": 357150045096305
+}
